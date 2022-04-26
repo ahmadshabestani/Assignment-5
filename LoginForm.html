@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            /*background-image: linear-gradient(right , purple , blue);*/
+            /*background-image: linear-gradient(to bottom right , purple,blue);*/
+            /*background-image: linear-gradient(top to bottom, purple, blue);*/
+            background-image: linear-gradient(purple, blue);
+            background-repeat: no-repeat;
+            height: 750px;
+        }
+
+        h1 {
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        form {
+            background-color: white;
+            width: 50%;
+            margin: 0 auto;
+            position: relative;
+            top: 60px;
+            height: 450px;
+        }
+
+        input {
+            padding-left: 25px;
+            margin: 0 auto;
+        }
+
+        .empass {
+            height: 40px;
+            border-radius: 5px;
+            background-color: #efefefef;
+            border: solid darkgray 1px;
+            color: darkgray;
+            display: flex;
+            justify-content: left;
+        }
+
+        .img1 {
+            background: url(imge/Email.png) no-repeat scroll 7px 7px;
+            padding-left: 50px;
+        }
+
+        .img2 {
+            background: url(imge/password.png) no-repeat scroll 7px 7px;
+            padding-left: 50px;
+        }
+
+
+        h2 {
+            font-family: sans-serif;
+            padding-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .chek {
+            font-family: sans-serif;
+            font-size: 14px;
+            color: darkgray;
+        }
+
+        #rem {
+            accent-color: #9b59b6;
+        }
+
+        .btn {
+            height: 40px;
+            width: 220px;
+            background-color: palevioletred;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+            position: relative;
+            left: 200px;
+        }
+
+        .text1 {
+            color: darkgray;
+            font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        .btnlog {
+            width: 100px;
+            height: 30px;
+            background-color: white;
+            border-radius: 5px;
+            border: 1px solid darkgray;
+        }
+
+        .btnLogin {
+            margin-left: 210px;
+        }
+        .chekbox{
+            margin-left: 200px;
+        }
+        .imgs{
+            position: absolute;
+            margin-top: 5px;
+            width: 20px;
+            margin-left: 5px;
+        }
+        #btnlog1{
+            color: #1a73e8;
+        }
+        .pfooter{
+            display: flex;
+            justify-content: center;
+            font-family: sans-serif;
+            font-size: 12px;
+            color: darkgray;
+        }
+        .pfooter a{
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form>
+        <h2>LOGIN</h2>
+        <input class="empass img1" type="email" placeholder="Email">
+        <p>
+            <input class="empass img2" type="password" value="123456">
+        <div class="btnLogin">
+            <input class="chek" type="checkbox" id="rem">
+            <label class="chek" for="rem" id="rem1">Remeber me</label>
+        </div>
+        <br>
+        <input class="btn" type="button" value="LOGIN">
+        <p class="text1">Or login with</p>
+        <div class="chekbox">
+            <img class="imgs" src="imge/fasebook.png" alt="google">
+            <input class="btnlog" id="btnlog1" type="submit" value="Facebook">
+            <img class="imgs" src="imge/google.png" alt="fasebook">
+            <input class="btnlog" id="btnlog2" type="submit" value="Google">
+        </div>
+        <br>
+        <br>
+        <p class="pfooter">Not a member ?  <a href="#">Sing up now</a></p>
+    </form>
+</div>
+</body>
+</html>
